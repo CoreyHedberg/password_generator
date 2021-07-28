@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+:root {
+  --font: "Mulish", "Segoe UI", serif;
+  --background: #0f044c;
+  --primary-color: #141e61;
+  --secondary-color: #787a91;
+  --font-color: #eeeeee;
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--font);
+}
+
+#main-window {
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  color: var(--font-color);
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 1em;
+  background-color: var(--secondary-color);
+  color: var(--font-color);
+  border: none;
+  border-radius: 8px;
+  height: 32px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--font-color);
+  color: var(--secondary-color);
+}
