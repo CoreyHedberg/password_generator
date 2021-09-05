@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Password Generator App written by Corey Hedberg"
+    />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
     <title>Password Generator</title>
   </head>
   <body>
@@ -17,6 +21,28 @@
         <button id="copy-button" class="button">
           <img src="./images/copy.svg" alt="Copy password" />
         </button>
+      </section>
+      <section id="options">
+        <div>
+          <label for="length">Length</label>
+          <input type="number" id="length" value="20" />
+        </div>
+        <div>
+          <label for="uppercase">Uppercase Letters</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div>
+          <label for="lowercase">Lowercase Letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div>
+          <label for="numbers">Numbers</label>
+          <input type="checkbox" id="numbers" checked />
+        </div>
+        <div>
+          <label for="symbols">Symbols</label>
+          <input type="checkbox" id="symbols" />
+        </div>
       </section>
       <div>
         <button id="generate-button" class="button">Generate Password</button>

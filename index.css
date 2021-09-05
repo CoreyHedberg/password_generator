@@ -15,6 +15,7 @@ body {
 
 .result-window {
   background-color: var(--secondary-color);
+  border-radius: 5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -22,13 +23,13 @@ body {
 }
 
 #result {
-  width: 300px;
+  width: 400px;
   height: 32px;
 }
 
 #copy-button {
   padding: 5px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   border: none;
   background-color: var(--background-color);
@@ -38,12 +39,27 @@ body {
   background-color: var(--primary-color);
   border-radius: 10px;
   color: var(--font-color);
-  width: 400px;
+  width: 500px;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#options {
+  width: 88%;
+  /* border: 1px dashed red; */
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  float: right;
+}
+
+#length {
+  width: 40px;
 }
 
 #generate-button {
@@ -53,7 +69,7 @@ body {
   background-color: var(--secondary-color);
   color: var(--font-color);
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   height: 32px;
   width: 200px;
   cursor: pointer;
